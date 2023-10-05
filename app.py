@@ -9,7 +9,7 @@ def fetch_poster(movie_id):
     """
     this fuction fetch the poster detail from tmdb website
     """
-    url = "https://api.themoviedb.org/3/movie/{}?api_key=8265bd1679663a7ea12ac168da84d2e8&language=en-US".format(movie_id)
+    url = "https://api.themoviedb.org/3/movie/{}?api_key={Enter your own tndb api key}".format(movie_id)
     response = requests.get(url)
     data = response.json()
     poster_path = data['poster_path']
